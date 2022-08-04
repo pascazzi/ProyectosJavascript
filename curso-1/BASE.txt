@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <HTML>
 
-
 <head>
-    <title>Pruebas de Estilo</title>
+    <title>Ejemplo base de html</title>
     <meta name="author" content="Pablo" />
     <meta name="keywords" content="pruebas, estilos, css" />
     <meta charset="utf-8" />
