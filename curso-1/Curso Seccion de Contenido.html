@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        col:nth-child(1) {
+            background-color: rgb(218, 143, 81);
+        }
+
+        col:nth-child(2) {
+            background-color: rgb(215, 218, 81);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p> Los links con download deben ser del mismo servidor (url relativa)</p>
+        <a href="EjercicioCurso1.html" target="_blank">Ejercicio en nueva pagina</a>
+        <br>
+        <a href="EjercicioCurso1.html" target="_self">Ejercicio en misma pagina</a>
+        <br>
+        <a href="EjercicioCurso1.html" download>Bajar Ejercicio</a>
+        <br>
+        <a href="https://google.com">google externo</a>
+        Inicio
+        Novelas
+        Peliculas
+        Contacto
+    </header>
+    <aside>Visita mi sitio web!</aside>
+    <main>
+        <pre>
+            DIV y SPAN tienen uso similar. Pero SPAN es de linea y DIV es de bloque
+            q es equivalente a blockquote Pero q es de linea y blockquote es de bloque.
+
+            Hola
+                Que tal
+                    Este texto respeta todo tal cual esta escrito
+             Incluyendo espacios
+        </pre>
+        <hr>
+        <table>
+            <caption>Horario de Clases</caption>
+            <colgroup>
+                <col>
+                <col span="2">
+                <!--  <col> -->
+                <col>
+
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Horario</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miercoles</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>10hs</td>
+                    <td>Matematica</td>
+                    <td>Matematica</td>
+                    <td rowspan="2">Lengua</td>
+                </tr>
+                <tr>
+                    <td>11hs</td>
+                    <td>Lengua</td>
+                    <td>Lengua</td>
+                    <!-- <td>Lengua</td> -->
+                </tr>
+                <tr>
+                    <td>12hs</td>
+                    <td>Historia</td>
+                    <td>Historia</td>
+                    <td>Historia</td>
+                </tr>
+                <tr>
+                    <td>13hs</td>
+                    <td colspan="3">Almuerzo</td>
+                </tr>
+                <tr>
+                    <td>14hs</td>
+                    <td>Educacion Fisica</td>
+                    <td>Laboratorio</td>
+                    <td>Educacion Fisica
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">TOTAL</td>
+                    <td>4 materias</td>
+                </tr>
+            </tfoot>
+        </table>
+        <blockquote cite="https://www.lipsum.com/">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolor labore rerum quae perspiciatis,
+            repellendus eligendi impedit, voluptatem debitis porro provident? Nesciunt blanditiis rem sapiente vero
+            praesentium, iste reprehenderit laudantium!
+        </blockquote>
+        <!-- Semantica correcta de un menu (nav+ul+li+a href) -->
+        <nav>
+            <ul type="circle">
+                <li><a href="#Noticia1">Noticia1 </a></li>
+                <li><a href="#Noticia2">Noticia2 </a></li>
+            </ul>
+        </nav>
+        <!--Agrupa "noticias nacionales"-->
+        <section>
+
+            <h1>Noticias Nacionales</h1>
+            <!--Agrupa noticias nacionales-->
+            <section>
+                <!--Este header no es obligatorio-->
+                <h2>Noticias del día</h2>
+                <article id="Noticia1">
+                    <header>
+                        <h3>Noticia 1</h3>
+                    </header>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi perferendis saepe rem
+                        laboriosam
+                        est consequuntur repellendus, vero magnam accusantium sapiente, voluptate ex veritatis fugit
+                        blanditiis, suscipit aliquid provident a ipsam!
+                    </p>
+                    <footer>Autor de noticia 1</footer>
+                </article>
+                <article id="Noticia2">
+                    <header>
+                        <h3>Noticia 2</h3>
+                    </header>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore minus voluptatibus sapiente
+                        explicabo reiciendis molestiae. Blanditiis asperiores, eius expedita ea consequuntur esse
+                        suscipit
+                        quasi, doloremque omnis perferendis deserunt impedit eveniet?</p>
+                    <footer>Autor de noticia 2</footer>
+                </article>
+
+            </section>
+        </section>
+        <!--  Atributos de lineas
+    <em></em>
+<strong></strong>
+<small></small>
+<br>
+<wbr>
+<time></time>
+<i></i>
+<b></b>
+<u></u> 
+<sup>
+<sub
+>
+-->
+        <!-- 
+    Atributos
+    Title sirve para tooltip
+    data sirve para guardar datos
+
+ -->
+        ul unorderer list
+        ol orderer list
+        dl definition list
+        dt Definition term
+        dd Definition Description
+        <dl>
+            <dt>HTML</dt>
+            <dd>Hipertext Marked Language: Lenguaje usado para estructurar datos web</dd>
+            <dt>CSS</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus consequuntur, voluptate
+                impedit, adipisci vitae cupiditate sunt non dolorem, maxime nisi perferendis. Cumque maiores itaque quas
+                cum necessitatibus molestias sint?</dd>
+            <dt>Javascript</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque suscipit eaque minus, totam
+                dolorem, tempore nesciunt repudiandae, incidunt atque vitae facere aperiam similique quisquam soluta.
+                Neque aut culpa saepe iste!</dd>
+
+        </dl>
+
+        <ol type="i">
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miercoles</li>
+        </ol>
+        <ol type="I">
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miercoles</li>
+        </ol>
+        <ol type="1">
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miercoles</li>
+        </ol>
+        <ol type="A" start="5">
+            <li>Lunes</li>
+            <li>Martes</li>
+            <li>Miercoles</li>
+        </ol>
+        li list item
+        <article>
+            <h2>Navegadores mas usados en 2020</h2>
+            <section>
+                <header>
+                    <h3>Chrome</h3>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores deserunt repellendus aliquid
+                    eveniet, laudantium quae. Tenetur quia deleniti culpa! Dolore autem temporibus eligendi voluptatum
+                    minus iure quasi corrupti adipisci saepe?</p>
+                <footer>Autor de explicacion chrome</footer>
+            </section>
+            <section>
+                <header>
+
+                    <h3>explorer</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia nihil rem maiores! Sed aperiam
+                    atque architecto saepe soluta nobis culpa, reiciendis iure praesentium ducimus alias neque aut
+                    corrupti, rerum ipsa?</p>
+                <span>Soy un elemento de linea </span>
+                <span>Soy otro elemento de linea </span>
+                <footer>Autor de explicacoin explorer</footer>
+            </section>
+        </article>
+    </main>
+    <footer>
+        Curso HTML 2022
+        <address>
+            Tony Stark <br>
+            Calle 4 <br>
+            Malibu <br>
+            California
+        </address>
+    </footer>
+    <pre>
+    <code>
+        CODE es para escribir codigo
+        Suele ir adentro de Pre
+
+        col:nth-child(1) {
+            background-color: rgb(218, 143, 81);
+        }
+
+        col:nth-child(2) {
+            background-color: rgb(215, 218, 81);
+        }
+    </code>
+    </pre>
+
+</body>
+
+</html>
