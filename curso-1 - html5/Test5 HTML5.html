@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <script type="text/javascript">
+        function verUbicacion() {
+
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            function showPosition(position) {
+                var lat = position.coords.latitude;
+                var lng = position.coords.longitude;
+                alert("Latitud: " + lat + ", longitud: " + lng);
+            }
+        }
+    </script>
+
+    <title>Pruebas de Estilo</title>
+    <meta name="author" content="Pablo" />
+    <meta name="keywords" content="pruebas, estilos, css" />
+    <meta charset="utf-8" />
+    <style>
+        .rojo {
+            background-color: red;
+        }
+
+        .miReproductor {
+            position: absolute;
+            top: 0;
+            left: 120px;
+            width: 400px;
+            height: 75x;
+            opacity: 0.8;
+            border: solid 1px blue;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            /* background-color: rgb(0, 0, 0); */
+            background-image: linear-gradient(red, yellow);
+            z-index: 5
+        }
+    </style>
+    <!--link rel="stylesheet" type="text/css" href="Test4.css"-->
+</head>
+
+<body>
+
+
+
+    <div class="miReproductor">
+        <p>
+            SONIDO 2.MP3
+
+            <a href="sonido2.mp3">Bajar archivo</a>
+        </p>
+        <p>
+            <audio id="player" src="sonido2.mp3"></audio>
+            <button onclick="document.getElementById('player').play();">Reproducir</button>
+            <button onclick="document.getElementById('player').pause();">Pausa</button>
+            <button onclick="document.getElementById('player').volume += 0.1;">Subir Volumen</button>
+            <button onclick="document.getElementById('player').volume -= 0.1;">Bajar Volumen</button>
+        </p>
+    </div>
+
+    <br><br> <br><br>
+    <video src="video1.mp4" controls width="320" height="240" poster="poster.jpg"> </video>
+    <audio src="sonido1.mp3" controls>
+        <p>Tu navegador no soporta el elemento audio</p>
+    </audio>
+    <input type="button" value="VER UBICACION ACTUAL ! " onclick="verUbicacion()"/>
+    <form action="somefile.php">
+        <input type="text" placeholder="Campo al cuete">
+        <br>
+        <label for="busqueda">Búsqueda con histórico: </label>
+        <input type="search" name="busqueda" id="busqueda" results="5" />
+        <label for="Edad">Edad</label>
+        <input type="number" name="Edad" value="18" min="1" max="90" step="1">
+
+        <label for="volumen">Volumen</label>
+        <input type="range" name="volumen" value="18" min="1" max="90" step="1">
+
+        <output onformchange="value = volumen.value">0</output>
+        <br>
+        <label for="primerin">Primer Campo</label>
+        <input type="text" name="primerin" placeholder="Campo de arranque" autofocus>
+        <br>
+        <label for="colorin">Color</label>
+        <input type="color" value=#018800 name="colorin">
+        <br>
+        <value for="correo" placeholder="Ingresa tu mailcito">correo</value>
+        <input type="email" name="correo">
+        <value for="fecha">fecha</value>
+        <input type="date" name="fecha">
+
+        <value for="datetime">datetime</value>
+        <input type="datetime" name="datetime">
+
+        <label for="diasemana">Día de la semana:</label>
+        <input type="text" name="diasemana" id="diasemana" list="dias" />
+        <datalist id="dias">
+            <option value="Lunes" />
+            <option value="Martes" />
+            <option value="Miércoles" />
+            <option value="Jueves" />
+            <option value="Viernes" />
+            <option value="Sábado" />
+            <option value="Domingo" />
+        </datalist>
+
+        <input type="text" name="username" placeholder="Username" pattern="[a-z]{1,15}"
+            title="Username should only contain lowercase letters. e.g. john">
+        <input name="" type="submit" />
+    </form>
+
+    <form name="formname">
+
+        <input id="clinicProfileNumber" name="clinicProfileNumber" ng-model="clinic.profile.number" type="text"
+            class="user-input" pattern="[0-9]{10}" title="10 digit mobile number">
+        <input id="doctorProfileContactnumber" name="doctorProfileContactnumber" ng-model="doctor.profile.contactNumber"
+            type="text" class="user-input" pattern="[0-9]{10}" title="10 digit mobile number">
+        <input name="" type="submit" />
+    </form> 
+
+
+    En las primeras líneas de este post indiqué que la funcionalidad de esta etiqueta es la de <mark> remarcar
+        textos</mark>. Dichos textos pueden ser las palabras de resultados de una búsqueda.
+
+    Hasta ahora se resaltaban con etiquetas span y similares, lo cual semánticamente no es correcto. Os pongo un
+    ejemplo:
+    <!--  onmouseout="alert('haz salido del area del contenedor')"" -->
+    <div class="rojo" id="contenedor" onmouseover="alert('entraste en el area del contenedor')" </body>
+        Zona de alertas, no pasar o aparece cartel
+    </div>
+
+</html>

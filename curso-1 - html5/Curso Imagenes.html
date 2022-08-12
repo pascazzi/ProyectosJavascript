@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Curso Pol</title>
+
+    <style>
+        video,
+        figure {}
+
+        /*  img {
+            max-width: 100%;
+        }
+
+        .peque {
+            max-width: 100px;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Contenido Embebido 1x</h1>
+    <h2>audio</h2>
+    <audio src="/assets/audio/sonido1.mp3" controls autplay muted>
+
+    </audio>
+
+    <h2>Video Embebido</h2>
+    <p>
+        <iframe width="727" height="409" src="https://www.youtube.com/embed/wHn1_QVoXGM"
+            title="TN EN VIVO |  Mirá la programación de @Todo Noticias durante las 24hs del día" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+    </p>
+    <h2>Video</h2>
+    <p>
+        <video src="/assets/video/video1.mp4" controls poster="/assets/imagenes/ave.png"></video>
+
+    </p>
+    <h2>Imagenes segun pc o movil 2x</h2>
+    <p><img srcset="/assets/imagenes/perro.jpg, /assets/imagenes/perro-movil.jpg 2x" src="/assets/imagenes/ave.png"
+            alt="nuevo perro">
+        <!-- Para explorer agregamos src con el ave -->
+
+    </p>
+
+
+
+    <h2>Imagenes basicas</h2>
+    <p>
+        <img src="/assets/imagenes/perro.jpg" alt="Es un perro">
+        <img src="/assets/imagenes/yoda.webp" alt="Yoda">
+        <img src="/assets/imagenes/espiral.gif" alt="Espiral girando">
+    </p>
+
+    <h2>Usamos la nueva etiqueta Picture</h2>
+    <p>
+        Si achico la pantalla se ve el perro movil
+        <picture>
+            <source srcset="assets/imagenes/perro-movil.jpg" media="(max-width:1500px)">
+            <img src="/assets/imagenes/perro.jpg" alt="Es un perro">
+        </picture>
+
+    </p>
+
+    <h2>Imagen embebida de otro sitio</h2>
+    <figure>
+        <img src="https://imagenes.eldebate.com/files/main_gallery/files/fp/uploads/2022/08/08/62f0e17699ae9.r_d.694-1165.jpeg"
+            alt="gato mirando">
+        <figcaption>Caption de imagen embebida</figcaption>
+    </figure>
+
+</body>
+
+</html>

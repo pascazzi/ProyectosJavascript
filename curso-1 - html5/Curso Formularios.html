@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Formularios</h1>
+    <h2>Campos</h2>
+    <form>
+        <div>
+            <label for="colorin">
+                Color
+                <input type="color" name="colorin" >
+            </label>
+            <label for="botonin">
+                Button
+                <input type="button" name="botonin" value="botonin">
+            </label>
+            <label for="enviar1">
+                Enviar con Submit
+                <input type="submit" name="enviar1" value="enviar2">
+            </label>
+        </div>
+        <div>
+            <label>
+                Masculino <input type="radio" value="Masculino" name="genero" checked>
+            </label>
+            <label>
+                Masculino <input type="radio" value="Femenino" name="genero">
+            </label>
+            <label>
+                Desconocido <input type="radio" value="Desconocido    " name="genero">
+            </label>
+        </div>
+        <div>
+            <label>
+                Ingles <input type="checkbox" value="english" name="lenguajes" checked>
+            </label>
+            <label>
+                Español <input type="checkbox" value="spanish" name="lenguajes">
+            </label>
+
+        </div>
+        <fieldset>
+            <legend>Informacion sobre lenguajes de programacion</legend>
+            <div>
+                lenguajes que sabe
+                <select name="lenguajesProgramacion" multiple>
+                    <option value="html">HTML</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="CSS">CSS</option>
+                </select>
+            </div>
+            <div>
+                Lenguaje para aprender
+                <select name="lenguajesProgramacion">
+                    <option value="html">HTML</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="CSS">CSS</option>
+                </select>
+            </div>
+        </fieldset>
+        <div>
+            <input type="file" name="archivo" id="archivo">
+        </div>
+        <div>
+            <label for="fuel">Combustible</label>
+            <meter id="fuel2" min="0" max="100" value="10" low="25" high="75" optimun="100"></meter>
+            <meter id="fuel3" min="0" max="100" value="50" low="25" high="75" optimun="100"></meter>
+            <meter id="fuel4" min="0" max="100" value="60" low="25" high="75" optimun="100"></meter>
+            <meter id="fuel5" min="0" max="100" value="80" low="25" high="75" optimum="100"></meter> 
+        </div>
+        <div>
+            <label for="progreso">Progreso</label>
+            <progress id="progreso" max="100" value="75"></progress>
+        </div>
+        <div>
+            <label for="comentario">Ingrese sus comentarios</label>
+            <textarea name="comentario" id="" cols="60" rows="8" placeholder="Por favor no ponga pavadas"></textarea>
+        </div>
+        <div>
+            <label for="campolimitado">Campo limitado entre 5 y 8 caracteres (y con autofocus)</label>
+            <input type="text" name="campolimitado" placeholder="entre 5 y 8" minlength="5" maxlength="8" autofocus>
+        </div>  
+        <div>
+            <label for="campocomun">Campo comun obligatorio</label>
+            <input type="text" name="campocomun" placeholder="soy obligatorio!" required>
+        </div>
+        <div>
+            <label for="camporeadonly">Campo comun readonly</label>
+            <input type="text" name="camporeadonly" value="soy read only" readonly>
+        </div>
+        <div>
+            <label for="campodisable">Campo campo disabled no se envia con submit</label>
+            <input type="text" name="campodisable" value="soy disabled" disabled>
+        </div>
+        <div>
+            <label for="numerin">Campo numerico mes con minimo y maximo</label>
+            <input type="number" name="numerin" value="6" min="1" max="12">
+        </div>
+        <div>
+            Animales (opciones agrupadas)
+            <select name="Animales">
+                <optgroup label="De 4 patas">
+                    <option value="Perro">Perro</option>
+                    <option value="Gato">Gato</option>
+                    <option value="Conejo">Conejo</option>
+                </optgroup>
+                <optgroup label="Aves">
+                    <option value="Gallina">Gallina</option>
+                    <option value="Canario">Canario</option>
+                </optgroup>
+                <optgroup label="Otras">
+                    <option value="Pez">Pez</option>
+                    <option value="Vivora">Vivora</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            Lista desplegable donde puedo presionar teclas para buscar
+            <input type="list" list="masco">
+            <datalist id="masco">
+                <option value="Perro"></option>
+                <option value="Gato"></option>
+                <option value="Conejo"></option>
+                <option value="Gallina"></option>
+                <option value="Canario">Canario u otro pajaro que cante</option>
+                <option value="Pez"> </option>
+                <option value="Vivora"> </option>
+            </datalist>
+        </div>
+        <div>
+            <button>BOTON ENVIAR BUTTON CLASICO</button>
+        </div>
+    </form>
+
+</body>
+
+</html>
